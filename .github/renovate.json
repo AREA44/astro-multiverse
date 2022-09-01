@@ -1,0 +1,6 @@
+{
+  "extends": ["config:base"],
+  "dependencyDashboard": false,
+  "labels": ["renovate"],
+  "automerge": true
+}

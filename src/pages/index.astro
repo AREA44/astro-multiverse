@@ -1,0 +1,116 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Thumb from "../components/Thumb.astro";
+
+let title = "Multiverse by HTML5 UP";
+let description =
+  "Say hello to Multiverse, a slick, one-page gallery design with a fully functional lightbox.";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{title}</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="description" content={description} />
+    <meta
+      property="og:image"
+      content="https://html5up.net/uploads/cards/multiverse.jpg"
+    />
+
+    <link href="./favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body class="is-preload">
+    <div id="wrapper">
+      <Header title="Multiverse" />
+
+      <div id="main">
+        <Thumb
+          title="Diam tempus accumsan"
+          href="./images/01.jpg"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        />
+        <Thumb
+          title="Vivamus convallis libero"
+          href="./images/02.jpg"
+          description="Sed velit lacus, laoreet at venenatis convallis in lorem tincidunt."
+        />
+        <Thumb
+          title="Nec accumsan enim felis"
+          href="./images/03.jpg"
+          description="Maecenas eleifend tellus ut turpis eleifend, vitae pretium faucibus."
+        />
+        <Thumb
+          title="Donec maximus nisi eget"
+          href="./images/04.jpg"
+          description="Tristique in nulla vel congue. Sed sociis natoque parturient nascetur."
+        />
+        <Thumb
+          title="Nullam vitae nunc vulputate"
+          href="./images/05.jpg"
+          description="In pellentesque cursus velit id posuere. Donec vehicula nulla."
+        />
+        <Thumb
+          title="Phasellus magna faucibus"
+          href="./images/06.jpg"
+          description="Nulla dignissim libero maximus tellus varius dictum ut posuere magna."
+        />
+        <Thumb
+          title="Proin quis mauris"
+          href="./images/07.jpg"
+          description="Etiam ultricies, lorem quis efficitur porttitor, facilisis ante orci urna."
+        />
+        <Thumb
+          title="Gravida quis varius enim"
+          href="./images/08.jpg"
+          description="Nunc egestas congue lorem. Nullam dictum placerat ex sapien tortor mattis."
+        />
+        <Thumb
+          title="Morbi eget vitae adipiscing"
+          href="./images/09.jpg"
+          description="In quis vulputate dui. Maecenas metus elit, dictum praesent lacinia lacus."
+        />
+        <Thumb
+          title="Habitant tristique senectus"
+          href="./images/10.jpg"
+          description="Vestibulum ante ipsum primis in faucibus orci luctus ac tincidunt dolor."
+        />
+        <Thumb
+          title="Pharetra ex non faucibus"
+          href="./images/11.jpg"
+          description="Ut sed magna euismod leo laoreet congue. Fusce congue enim ultricies."
+        />
+        <Thumb
+          title="Mattis lorem sodales"
+          href="./images/12.jpg"
+          description="Feugiat auctor leo massa, nec vestibulum nisl erat faucibus, rutrum nulla."
+        />
+      </div>
+
+      <Footer
+        title="AREA44"
+        description="Just another fine responsive site template by HTML5 UP"
+        tiwtter="#"
+        facebook="#"
+        instagram="#"
+        github="#"
+        dribbble="#"
+        linkedin="#"
+      />
+    </div>
+
+    <script is:raw src="js/jquery.min.js"></script>
+    <script is:raw src="js/jquery.poptrox.min.js"></script>
+    <script is:raw src="js/browser.min.js"></script>
+    <script is:raw src="js/breakpoints.min.js"></script>
+    <script is:raw src="js/util.js"></script>
+    <script is:raw src="js/main.js"></script>
+  </body>
+</html>
