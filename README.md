@@ -7,7 +7,7 @@ Say hello to **Multiverse**, a slick, one-page gallery design with a fully funct
 All commands are run from the root of the project, from a terminal:
 
 | Command           | Action                                       |
-|:----------------  |:-------------------------------------------- |
+| :---------------- | :------------------------------------------- |
 | `npm install`     | Installs dependencies                        |
 | `npm run dev`     | Starts local dev server at `localhost:3000`  |
 | `npm run build`   | Build your production site to `./dist/`      |
@@ -17,15 +17,7 @@ All commands are run from the root of the project, from a terminal:
 
 ### Thumb
 
-Just add your thumb to the thumb section in [`index.astro`](src/pages/index.astro) in the following format:
-
-```ts
-	<Thumb
-		title="Title"
-		href="path/to/images/image.jpg"
-		description="Description"
-	/>
-```
+Replace your images in `public/images`.
 
 ## License
 

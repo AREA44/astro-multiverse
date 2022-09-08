@@ -3,10 +3,8 @@ const { href, title, description } = Astro.props;
 ---
 
 <article class="thumb">
-  <a class="image" href={href}
-    data-position="top left"
-  >
-    <img src={href} />
+  <a class="image" href={href} >
+    <img src={href} alt="" />
   </a>
   <h2>{title}</h2>
   <p>{description}</p>
