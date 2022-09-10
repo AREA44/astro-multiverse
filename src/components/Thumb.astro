@@ -1,10 +1,12 @@
 ---
+import {Image} from "@astrojs/image/components";
+
 const { href, title, description } = Astro.props;
 ---
 
 <article class="thumb">
   <a class="image" href={href} >
-    <img src={href} alt="" />
+    <Image src={href} width="1200" aspectRatio="4:3" format="webp" alt="" />
   </a>
   <h2>{title}</h2>
   <p>{description}</p>

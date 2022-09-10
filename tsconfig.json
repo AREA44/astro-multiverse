@@ -1,3 +1,5 @@
 {
-  "extends": "astro/tsconfigs/base"
+  "compilerOptions": {
+    "types": ["@astrojs/image/client"]
+  }
 }
