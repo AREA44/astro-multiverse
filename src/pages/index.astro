@@ -3,7 +3,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Thumb from "../components/Thumb.astro";
 
-const images = await Astro.glob("../../public/images/*.*");
+const images = await Astro.glob("../images/*.*");
 
 let title = "Multiverse by HTML5 UP";
 let description = "Say hello to Multiverse, a slick, one-page gallery design with a fully functional lightbox.";
@@ -30,7 +30,7 @@ let description = "Say hello to Multiverse, a slick, one-page gallery design wit
         {images.map((img)=>(
             <Thumb
               title="Diam tempus accumsan"
-              href={img.default}
+              href={img.default.src}
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             />
           ))
