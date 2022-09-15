@@ -19,7 +19,7 @@ All commands are run from the root of the project, from a terminal:
 
 ### Thumb
 
-Replace your images in `public/images`.
+Replace your images in `src/images`.
 
 ## License
 
