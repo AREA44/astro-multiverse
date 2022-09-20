@@ -14,7 +14,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/image": "0.7.0",
+    "@astrojs/image": "0.7.1",
     "astro": "1.2.7"
   }
 }
