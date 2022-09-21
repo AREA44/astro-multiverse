@@ -16,5 +16,8 @@
   "devDependencies": {
     "@astrojs/image": "0.7.1",
     "astro": "1.2.8"
+  },
+  "dependencies": {
+    "@astrojs/partytown": "^1.0.0"
   }
 }
