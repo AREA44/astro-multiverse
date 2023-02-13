@@ -15,6 +15,6 @@
   },
   "devDependencies": {
     "@astrojs/image": "0.14.1",
-    "astro": "2.0.10"
+    "astro": "2.0.11"
   }
 }
