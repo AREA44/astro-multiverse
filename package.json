@@ -1,6 +1,6 @@
 {
   "name": "astro-multiverse",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "author": {
     "name": "AREA44",
@@ -14,7 +14,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/image": "0.15.0",
-    "astro": "2.0.14"
+    "@astrojs/image": "^0.15.0",
+    "astro": "^2.0.14"
   }
 }

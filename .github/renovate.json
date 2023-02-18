@@ -2,8 +2,7 @@
   "extends": ["config:base"],
   "dependencyDashboard": false,
   "labels": ["renovate"],
-  "automerge": true,
-  "schedule": [
-    "every weekday"
-  ]
+  "automerge": false,
+  "rangeStrategy": "bump",
+  "schedule": ["before 3am on Monday"]
 }
