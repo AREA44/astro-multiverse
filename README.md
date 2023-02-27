@@ -1,6 +1,6 @@
 # Astro Multiverse
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8592e823-a037-4c80-9b5e-2888370c76a8/deploy-status)](https://app.netlify.com/sites/astro-multiverse/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c882c9a0-e5f6-4066-89fd-c07c7ca2efdf/deploy-status)](https://app.netlify.com/sites/astro-multiverse/deploys)
 
 Say hello to **Multiverse**, a slick, one-page gallery design with a fully functional lightbox.
 
