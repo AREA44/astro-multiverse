@@ -1,3 +1,8 @@
 [build]
   command = "pnpm run build"
   publish = "dist"
+
+[[plugins]]
+  # Netlify Plugin Lighthouse
+  # see detail: https://github.com/netlify/netlify-plugin-lighthouse
+  package = "@netlify/plugin-lighthouse"
