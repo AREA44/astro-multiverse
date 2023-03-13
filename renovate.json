@@ -1,0 +1,15 @@
+{
+  "extends": ["config:base"],
+  "dependencyDashboard": false,
+  "labels": ["renovate"],
+  "automerge": true,
+  "schedule": ["before 3am on Monday"],
+  "packageRules": [
+    {
+      "groupName": "astro",
+      "labels": ["astro"],
+      "matchPackageNames": ["astro"],
+      "matchPackagePatterns": ["^@astro", "^astro"]
+    }
+  ]
+}

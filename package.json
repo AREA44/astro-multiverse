@@ -14,7 +14,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/image": "^0.16.0",
+    "@astrojs/sitemap": "^1.2.0",
     "astro": "^2.1.2"
   }
 }
