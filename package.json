@@ -1,6 +1,6 @@
 {
   "name": "astro-multiverse",
-  "version": "2.0.0",
+  "version": "23.6.24",
   "private": true,
   "author": {
     "name": "AREA44",
@@ -13,8 +13,8 @@
     "build": "astro build",
     "preview": "astro preview"
   },
-  "devDependencies": {
-    "@astrojs/sitemap": "^1.2.2",
-    "astro": "^2.3.0"
-  }
+  "dependencies": {
+    "astro": "^2.7.0"
+  },
+  "packageManager": "pnpm@8.6.3"
 }

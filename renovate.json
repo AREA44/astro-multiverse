@@ -1,6 +1,6 @@
 {
   "extends": ["config:base"],
-  "dependencyDashboard": false,
+  "dependencyDashboard": true,
   "labels": ["renovate"],
   "automerge": true,
   "schedule": ["before 3am on Monday"],

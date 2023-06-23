@@ -8,8 +8,8 @@ Say hello to **Multiverse**, a slick, one-page gallery design with a fully funct
 
 All commands are run from the root of the project, from a terminal:
 
-| Command       | Action                                       |
-| :------------ | :------------------------------------------- |
+| Command        | Action                                       |
+| :------------- | :------------------------------------------- |
 | `pnpm install` | Installs dependencies                        |
 | `pnpm dev`     | Starts local dev server at `localhost:3000`  |
 | `pnpm build`   | Build your production site to `./dist/`      |
@@ -17,13 +17,11 @@ All commands are run from the root of the project, from a terminal:
 
 ## How it works
 
-### Thumb
-
-Replace your images in `src/images`.
+You can change your images in `public/images`. After that update list of images in [`images.json`](src/components/images.json). If you want you can use [this tool](https://github.com/AREA44/node-getImages) to genarate a `images.json`.
 
 ## License
 
-**Lens** by [HTML5 UP](https://html5up.net). Free for personal and commercial use under the [CCA 3.0](https://html5up.net/license) license.
+**Multivese** by [HTML5 UP](https://html5up.net). Free for personal and commercial use under the [CCA 3.0](https://html5up.net/license) license.
 
 ## Credits
 

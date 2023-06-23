@@ -1,4 +1,6 @@
 ---
+import "../styles/main.css";
+
 interface Props {
   title?: string | undefined;
   description?: string | undefined;
@@ -18,8 +20,7 @@ const { title, description, author, og } = Astro.props;
   />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="generator" content={Astro.generator} />
-  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
-  <link rel="sitemap" type="application/xml" href="/sitemap-index.xml">
+  <link rel="shortcut icon" type="image/png" href="./favicon.svg" />
   <title>{title}</title>
   <meta name="title" content={title} />
   <meta name="description" content={description} />
@@ -34,5 +35,4 @@ const { title, description, author, og } = Astro.props;
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={new URL(og, Astro.url)} />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="css/main.css" />
 </head>

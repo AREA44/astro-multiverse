@@ -2,12 +2,11 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import Thumb from "../components/Thumb.astro";
-
-const images = await Astro.glob("../images/*.*");
+import images from "../components/images.json";
 
 let title = "Multiverse by HTML5 UP";
-let description = "Say hello to Multiverse, a slick, one-page gallery design with a fully functional lightbox.";
+let description =
+  "Say hello to Multiverse, a slick, one-page gallery design with a fully functional lightbox.";
 ---
 
 <!DOCTYPE html>
@@ -24,12 +23,20 @@ let description = "Say hello to Multiverse, a slick, one-page gallery design wit
       <Header title="Multiverse" />
 
       <div id="main">
-        {images.map((img)=>(
-            <Thumb
-              title="Diam tempus accumsan"
-              href={img.default.src}
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            />
+        {
+          images.map((img) => (
+            <article class="thumb">
+              <a class="image" href={img.src}>
+                <img
+                  src={img.src}
+                  width="1200"
+                  height="900"
+                  alt="Astro Multiverse"
+                />
+              </a>
+              <h2>{title}</h2>
+              <p>{description}</p>
+            </article>
           ))
         }
       </div>
