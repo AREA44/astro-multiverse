@@ -1,5 +1,7 @@
 # Astro Multiverse
 
+[![Built with Astro](https://astro.badg.es/v1/built-with-astro/small.svg)](https://astro.build)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c882c9a0-e5f6-4066-89fd-c07c7ca2efdf/deploy-status)](https://app.netlify.com/sites/astro-multiverse/deploys)
 
 Say hello to **Multiverse**, a slick, one-page gallery design with a fully functional lightbox.
