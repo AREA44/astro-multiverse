@@ -1,5 +1,5 @@
 ---
-import "../styles/main.css";
+import '@/styles/main.css';
 
 interface Props {
   title?: string | undefined;
@@ -12,27 +12,27 @@ const { title, description, author, og } = Astro.props;
 ---
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="robots" content="index, follow" />
+  <meta charset='utf-8' />
+  <meta name='robots' content='index, follow' />
   <meta
-    name="googlebot"
-    content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+    name='googlebot'
+    content='index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1'
   />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="generator" content={Astro.generator} />
-  <link rel="shortcut icon" type="image/png" href="./favicon.svg" />
+  <meta name='viewport' content='width=device-width,initial-scale=1' />
+  <meta name='generator' content={Astro.generator} />
+  <link rel='shortcut icon' type='image/png' href='./favicon.svg' />
   <title>{title}</title>
-  <meta name="title" content={title} />
-  <meta name="description" content={description} />
-  <meta name="author" content={author} />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content={Astro.url} />
-  <meta property="og:title" content={title} />
-  <meta property="og:description" content={description} />
-  <meta property="og:image" content={new URL(og, Astro.url)} />
-  <meta name="twitter:url" content={Astro.url} />
-  <meta name="twitter:title" content={title} />
-  <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content={new URL(og, Astro.url)} />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta name='title' content={title} />
+  <meta name='description' content={description} />
+  <meta name='author' content={author} />
+  <meta property='og:type' content='website' />
+  <meta property='og:url' content={Astro.url} />
+  <meta property='og:title' content={title} />
+  <meta property='og:description' content={description} />
+  <meta property='og:image' content={new URL(og, Astro.url)} />
+  <meta name='twitter:url' content={Astro.url} />
+  <meta name='twitter:title' content={title} />
+  <meta name='twitter:description' content={description} />
+  <meta name='twitter:image' content={new URL(og, Astro.url)} />
+  <meta name='twitter:card' content='summary_large_image' />
 </head>

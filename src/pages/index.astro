@@ -1,12 +1,13 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import images from "../components/images.json";
+import BaseHead from '@/components/BaseHead.astro';
+import Footer from '@/components/Footer.astro';
+import images from '@/components/images.json';
 
-let title = "Multiverse by HTML5 UP";
+import { Icon } from 'astro-icon';
+
+let title = 'Multiverse by HTML5 UP';
 let description =
-  "Say hello to Multiverse, a slick, one-page gallery design with a fully functional lightbox.";
+  'Say hello to Multiverse, a slick, one-page gallery design with a fully functional lightbox.';
 ---
 
 <!DOCTYPE html>
@@ -14,13 +15,109 @@ let description =
   <BaseHead
     title={title}
     description={description}
-    author={"AREA44"}
-    og={"og.jpg"}
+    author={'AREA44'}
+    og={'og-image.jpg'}
   />
 
   <body class="is-preload">
     <div id="wrapper">
-      <Header title="Multiverse" />
+      <header id="header">
+        <h1>{title}</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#footer" class="icon solid fa-info-circle">About</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <footer id="footer" class="panel">
+        <div class="inner split">
+          <div>
+            <section>
+              <h2>{title}</h2>
+              <p>{description}</p>
+            </section>
+            <section>
+              <h2>Follow me on ...</h2>
+              <ul class="icons">
+                <li>
+                  <a href="#" class="icon brands fa-twitter"
+                    ><span class="label">Twitter</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="icon brands fa-facebook-f"
+                    ><span class="label">Facebook</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="icon brands fa-instagram"
+                    ><span class="label">Instagram</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="icon brands fa-github"
+                    ><span class="label">GitHub</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="icon brands fa-dribbble"
+                    ><span class="label">Dribbble</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="icon brands fa-linkedin-in"
+                    ><span class="label">LinkedIn</span></a
+                  >
+                </li>
+              </ul>
+            </section>
+            <p class="copyright">
+              &copy; AREA44. Design: <a href="http://html5up.net">HTML5 UP</a
+              >.<br />
+              Images: <a href="http://unsplash.com">Unsplash</a>
+            </p>
+          </div>
+          <div>
+            <section>
+              <h2>Get in touch</h2>
+              <form method="post" action="#">
+                <div class="fields">
+                  <div class="field half">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="field half">
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="field">
+                    <textarea
+                      name="message"
+                      id="message"
+                      rows="4"
+                      placeholder="Message"></textarea>
+                  </div>
+                </div>
+                <ul class="actions">
+                  <li><input type="submit" value="Send" class="primary" /></li>
+                  <li><input type="reset" value="Reset" /></li>
+                </ul>
+              </form>
+            </section>
+          </div>
+        </div>
+      </footer>
 
       <div id="main">
         {
@@ -40,17 +137,6 @@ let description =
           ))
         }
       </div>
-
-      <Footer
-        title="Multiverse"
-        description="Just another fine responsive site template by HTML5 UP"
-        tiwtter="#"
-        facebook="#"
-        instagram="#"
-        github="#"
-        dribbble="#"
-        linkedin="#"
-      />
     </div>
 
     <script is:inline src="js/jquery.min.js"></script>

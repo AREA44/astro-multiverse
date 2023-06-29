@@ -1,0 +1,7 @@
+dist/
+public/
+node_modules/
+pnpm-lock.yaml
+.netlify/
+*.min.css
+.astro/
