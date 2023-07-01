@@ -15,6 +15,12 @@ pnpm install
 pnpm dev
 ```
 
+## Features
+
+- SEO friendly.
+- Compress CSS, HTML, JavaScript and more with [astro-community/astro-compress](https://github.com/astro-community/astro-compress).
+- Inline your critical CSS with [astro-community/astro-critters](https://github.com/astro-community/astro-critters).
+
 ## How it works
 
 You can change your images in `public/images`. After that update list of images in [`images.json`](src/components/images.json). If you want you can use [this tool](https://github.com/AREA44/node-getImages) to genarate a `images.json`.
