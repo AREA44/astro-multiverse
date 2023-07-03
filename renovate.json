@@ -1,15 +1,6 @@
 {
-  "extends": ["config:base"],
+  "extends": ["config:base", ":dependencyDashboardApproval"],
   "dependencyDashboard": true,
   "labels": ["renovate"],
-  "automerge": true,
-  "schedule": ["before 3am on Monday"],
-  "packageRules": [
-    {
-      "groupName": "astro",
-      "labels": ["astro"],
-      "matchPackageNames": ["astro"],
-      "matchPackagePatterns": ["^@astro", "^astro"]
-    }
-  ]
+  "automerge": true
 }
