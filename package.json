@@ -1,6 +1,6 @@
 {
   "name": "astro-multiverse",
-  "version": "23.7.7",
+  "version": "23.7.16",
   "private": true,
   "author": {
     "name": "AREA44",
@@ -15,13 +15,13 @@
     "format": "prettier -w . --cache"
   },
   "dependencies": {
-    "astro": "^2.8.0",
-    "astro-compress": "^1.1.49",
-    "astro-critters": "^1.1.39"
+    "astro": "^2.8.3"
   },
   "devDependencies": {
+    "astro-compress": "^1.1.49",
+    "astro-critters": "^1.1.39",
     "prettier": "^3.0.0",
-    "prettier-plugin-astro": "^0.10.0"
+    "prettier-plugin-astro": "^0.11.0"
   },
   "packageManager": "pnpm@8.6.7"
 }
