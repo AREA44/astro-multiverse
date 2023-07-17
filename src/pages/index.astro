@@ -1,5 +1,6 @@
 ---
 import BaseHead from '@/components/BaseHead.astro';
+import ExternalScripts from '@/components/ExternalScripts.astro';
 import images from '@/components/images.json';
 
 let title = 'Multiverse by HTML5 UP';
@@ -135,12 +136,6 @@ let description =
         }
       </div>
     </div>
-
-    <script is:inline src="js/jquery.min.js"></script>
-    <script is:inline src="js/jquery.poptrox.min.js"></script>
-    <script is:inline src="js/browser.min.js"></script>
-    <script is:inline src="js/breakpoints.min.js"></script>
-    <script is:inline src="js/util.js"></script>
-    <script is:inline src="js/main.js"></script>
+    <ExternalScripts />
   </body>
 </html>
