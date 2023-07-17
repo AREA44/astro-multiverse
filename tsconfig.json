@@ -20,6 +20,6 @@
     "ignoreDeprecations": "5.0",
     "allowJs": true
   },
-  "include": ["./src/env.d.ts", "**/*.{ts}", "**/*.{tsx}", "astro.config.mjs"],
+  "include": ["./src/env.d.ts", "**/*.{ts}", "**/*.{tsx}"],
   "exclude": ["node_modules"]
 }
