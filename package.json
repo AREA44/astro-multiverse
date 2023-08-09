@@ -1,6 +1,6 @@
 {
   "name": "astro-multiverse",
-  "version": "23.7.18",
+  "version": "23.8.9",
   "private": true,
   "author": {
     "name": "AREA44",
@@ -18,9 +18,9 @@
     "astro": "^2.8.3"
   },
   "devDependencies": {
-    "astro-compress": "^1.1.49",
-    "astro-critters": "^1.1.39",
-    "prettier": "^3.0.0",
+    "astro-compress": "^2.0.2",
+    "astro-critters": "^2.0.0",
+    "prettier": "^3.0.1",
     "prettier-plugin-astro": "^0.11.0"
   },
   "packageManager": "pnpm@8.6.12"
