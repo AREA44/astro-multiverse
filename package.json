@@ -2,17 +2,17 @@
   "name": "astro-multiverse",
   "version": "23.8.10",
   "private": true,
+  "license": "CCA-3.0",
   "author": {
     "name": "AREA44",
     "url": "https://github.com/AREA44/astro-multiverse"
   },
-  "license": "CCA-3.0",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
     "build": "astro build",
+    "dev": "astro dev",
+    "format": "prettier -w . --cache",
     "preview": "astro preview",
-    "format": "prettier -w . --cache"
+    "start": "astro dev"
   },
   "dependencies": {
     "astro": "^2.8.3"
