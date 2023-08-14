@@ -1,0 +1,27 @@
+name: autofix.ci
+
+on:
+  pull_request:
+  push:
+    branches: ['main']
+permissions:
+  contents: read
+
+jobs:
+  autofix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Install dependencies
+        run: pnpm install
+      - name: Format with Prettier
+        run: pnpm exec prettier -w . "!.github"
+
+      - name: Run autofix.ci
+        uses: autofix-ci/action@8caa572fd27b0019a65e4c695447089c8d3138b9
