@@ -28,7 +28,7 @@ pnpm dev
 
 ## How it works
 
-You can change your images in `public/images`. After that update list of images in [`images.json`](src/components/images.json). If you want you can use [this tool](https://github.com/AREA44/node-getImages) to genarate a `images.json`.
+You can change your images in `public/images`. After that update list of images in [`images.json`](src/components/images.json). If you want you can use [this tool](https://github.com/AREA44/node-image-meta-fetcher) to genarate a `images.json`.
 
 ## License
 
