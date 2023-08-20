@@ -1,13 +1,6 @@
 # Astro Multiverse
 
-<p>
-  <a href="https://astro.build">
-    <img src="https://astro.badg.es/v1/built-with-astro.svg" alt="Built with Astro" height="20">
-  </a>
-  <a href="https://app.netlify.com/sites/astro-multiverse/deploys">
-    <img src="https://api.netlify.com/api/v1/badges/c882c9a0-e5f6-4066-89fd-c07c7ca2efdf/deploy-status" alt="Netlify Status">
-  </a>
-</p>
+[![Built with Astro](https://astro.badg.es/v1/built-with-astro/tiny.svg)](https://astro.build)
 
 Say hello to **Multiverse**, a slick, one-page gallery design with a fully functional lightbox.
 
