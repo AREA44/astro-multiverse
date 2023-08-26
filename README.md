@@ -10,7 +10,9 @@ Say hello to **Multiverse**, a slick, one-page gallery design with a fully funct
 - Compress CSS, HTML, JavaScript and more with [astro-community/AstroCompress](https://github.com/astro-community/AstroCompress).
 - Inline your critical CSS with [astro-community/AstroCritters](https://github.com/astro-community/AstroCritters).
 
-## Develop locally
+## Getting Started
+
+To get started with Astro Multiverse, follow these steps:
 
 ```bash
 git clone https://github.com/AREA44/astro-multiverse
@@ -19,9 +21,9 @@ pnpm install
 pnpm dev
 ```
 
-## How it works
+## How to Customize
 
-You can change your images in `public/images`. After that update list of images in [`images.json`](src/components/images.json). If you want you can use [this tool](https://github.com/AREA44/node-image-meta-fetcher) to genarate a `images.json`.
+To customize Astro Multiverse, you can change your images in the `public/images` directory.
 
 ## License
 
@@ -29,7 +31,13 @@ You can change your images in `public/images`. After that update list of images 
 
 ## Credits
 
+Astro Multiverse uses the following resources:
+
 - Demo images by [Unsplash](https://unsplash.com)
 - Icons by [Font Awesome](https://fontawesome.io)
 - [jQuery](https://jquery.com)
 - [Poptrox](https://github.com/ajlkn/jquery.poptrox)
+
+## Contributions
+
+Contributions to Astro Multiverse are welcome! If you have any suggestions or improvements, feel free to create a pull request.

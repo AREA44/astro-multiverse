@@ -1,6 +1,6 @@
 {
   "name": "astro-multiverse",
-  "version": "23.8.15",
+  "version": "23.8.27",
   "private": true,
   "license": "CCA-3.0",
   "author": {
@@ -15,7 +15,8 @@
     "start": "astro dev"
   },
   "dependencies": {
-    "astro": "^2.10.14"
+    "astro": "^2.10.14",
+    "glob": "^10.3.3"
   },
   "devDependencies": {
     "astro-compress": "^2.0.14",

@@ -1,14 +1,31 @@
 ---
-import BaseHead from '@/components/BaseHead.astro';
-import ExternalScripts from '@/components/ExternalScripts.astro';
-import images from '@/components/images.json';
+import BaseHead from '@/components/BaseHead.astro'
+import ExternalScripts from '@/components/ExternalScripts.astro'
+import { glob } from 'glob'
+import { Image } from 'astro:assets'
 
-let title = 'Multiverse by HTML5 UP';
+let title = 'Multiverse by HTML5 UP'
 let description =
-  'Say hello to Multiverse, a slick, one-page gallery design with a fully functional lightbox.';
+  'Say hello to Multiverse, a slick, one-page gallery design with a fully functional lightbox.'
+
+async function ImageFetcher(pattern: string) {
+  const files = glob.sync(pattern, { posix: true })
+  const imagePromises = files.map(async (file) => {
+    const src = file.replace('public', '')
+    return { src }
+  })
+
+  const imageFiles = await Promise.all(imagePromises)
+
+  imageFiles.sort((a, b) => a.src.localeCompare(b.src))
+
+  return imageFiles
+}
+
+const imageFiles = await ImageFetcher('public/images/*.{jpg,,jpeg,png,webp}')
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <BaseHead
     title={title}
@@ -29,113 +46,109 @@ let description =
           </ul>
         </nav>
       </header>
-
-      <footer id="footer" class="panel">
-        <div class="inner split">
-          <div>
-            <section>
-              <h2>{title}</h2>
-              <p>{description}</p>
-            </section>
-            <section>
-              <h2>Follow me on ...</h2>
-              <ul class="icons">
-                <li>
-                  <a href="#" class="icon brands fa-twitter"
-                    ><span class="label">Twitter</span></a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="icon brands fa-facebook-f"
-                    ><span class="label">Facebook</span></a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="icon brands fa-instagram"
-                    ><span class="label">Instagram</span></a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="icon brands fa-github"
-                    ><span class="label">GitHub</span></a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="icon brands fa-dribbble"
-                    ><span class="label">Dribbble</span></a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="icon brands fa-linkedin-in"
-                    ><span class="label">LinkedIn</span></a
-                  >
-                </li>
-              </ul>
-            </section>
-            <p class="copyright">
-              &copy; AREA44. Design: <a href="http://html5up.net">HTML5 UP</a
-              >.<br />
-              Images: <a href="http://unsplash.com">Unsplash</a>
-            </p>
-          </div>
-          <div>
-            <section>
-              <h2>Get in touch</h2>
-              <form method="post" action="#">
-                <div class="fields">
-                  <div class="field half">
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Name"
-                    />
-                  </div>
-                  <div class="field half">
-                    <input
-                      type="text"
-                      name="email"
-                      id="email"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <div class="field">
-                    <textarea
-                      name="message"
-                      id="message"
-                      rows="4"
-                      placeholder="Message"></textarea>
-                  </div>
-                </div>
-                <ul class="actions">
-                  <li><input type="submit" value="Send" class="primary" /></li>
-                  <li><input type="reset" value="Reset" /></li>
-                </ul>
-              </form>
-            </section>
-          </div>
-        </div>
-      </footer>
-
-      <div id="main">
-        {
-          images.map((img) => (
-            <article class="thumb">
-              <a class="image" href={img.src}>
-                <img
-                  src={img.src}
-                  width="1200"
-                  height="900"
-                  alt="Astro Multiverse"
-                />
-              </a>
-              <h2>{title}</h2>
-              <p>{description}</p>
-            </article>
-          ))
-        }
-      </div>
     </div>
+
+    <footer id="footer" class="panel">
+      <div class="inner split">
+        <div>
+          <section>
+            <h2>{title}</h2>
+            <p>{description}</p>
+          </section>
+          <section>
+            <h2>Follow me on ...</h2>
+            <ul class="icons">
+              <li>
+                <a href="#" class="icon brands fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-facebook-f"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-instagram"
+                  ><span class="label">Instagram</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-dribbble"
+                  ><span class="label">Dribbble</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-linkedin-in"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+            </ul>
+          </section>
+          <p class="copyright">
+            &copy; AREA44. Design: <a href="http://html5up.net">HTML5 UP</a>.<br
+            />
+             Images: <a href="http://unsplash.com">Unsplash</a>
+          </p>
+        </div>
+        <div>
+          <section>
+            <h2>Get in touch</h2>
+            <form method="post" action="#">
+              <div class="fields">
+                <div class="field half">
+                  <input type="text" name="name" id="name" placeholder="Name" />
+                </div>
+                <div class="field half">
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="field">
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="4"
+                    placeholder="Message"></textarea>
+                </div>
+              </div>
+              <ul class="actions">
+                <li><input type="submit" value="Send" class="primary" /></li>
+                <li><input type="reset" value="Reset" /></li>
+              </ul>
+            </form>
+          </section>
+        </div>
+      </div>
+    </footer>
+
+    <div id="main">
+      {
+        imageFiles.map((img) => (
+          <article class="thumb">
+            <a class="image" href={img.src}>
+              <Image
+                src={img.src}
+                width="1200"
+                height="900"
+                alt="Astro Multiverse"
+              />
+            </a>
+            <h2>{title}</h2>
+            <p>{description}</p>
+          </article>
+        ))
+      }
+    </div>
+
     <ExternalScripts />
   </body>
 </html>
