@@ -19,9 +19,9 @@ jobs:
         uses: pnpm/action-setup@v2
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
       - name: Format with Prettier
         run: pnpm exec prettier -w . "!.github"
 
       - name: Run autofix.ci
-        uses: autofix-ci/action@8caa572fd27b0019a65e4c695447089c8d3138b9
+        uses: autofix-ci/action@v1.1
