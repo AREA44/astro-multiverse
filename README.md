@@ -4,12 +4,6 @@
 
 Say hello to **Multiverse**, a slick, one-page gallery design with a fully functional lightbox.
 
-## Features
-
-- SEO friendly.
-- Compress CSS, HTML, JavaScript and more with [astro-community/AstroCompress](https://github.com/astro-community/AstroCompress).
-- Inline your critical CSS with [astro-community/AstroCritters](https://github.com/astro-community/AstroCritters).
-
 ## Getting Started
 
 To get started with Astro Multiverse, follow these steps:

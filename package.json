@@ -1,6 +1,6 @@
 {
   "name": "astro-multiverse",
-  "version": "23.8.27",
+  "version": "23.8.30",
   "private": true,
   "license": "CCA-3.0",
   "author": {
@@ -19,8 +19,6 @@
     "glob": "^10.3.3"
   },
   "devDependencies": {
-    "astro-compress": "^2.0.14",
-    "astro-critters": "^2.0.11",
     "prettier": "^3.0.2",
     "prettier-plugin-astro": "^0.12.0"
   },
