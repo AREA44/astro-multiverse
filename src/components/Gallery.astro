@@ -1,0 +1,41 @@
+---
+import { Image } from 'astro:assets'
+import { glob } from 'glob'
+
+async function ImageFetcher(pattern: string) {
+  const files = glob.sync(pattern, { posix: true })
+  const imagePromises = files.map(async (file) => {
+    const src = file.replace('public', '')
+    return { src }
+  })
+
+  const imageFiles = await Promise.all(imagePromises)
+
+  imageFiles.sort((a, b) => a.src.localeCompare(b.src))
+
+  return imageFiles
+}
+
+const imageFiles = await ImageFetcher('public/images/*.{jpg,,jpeg,png,webp}')
+
+const { title, description } = Astro.props
+---
+
+<div id="main">
+  {
+    imageFiles.map((img) => (
+      <article class="thumb">
+        <a class="image" href={img.src} aria-label="image">
+          <Image
+            src={img.src}
+            width="1200"
+            height="750"
+            alt="Astro Multiverse"
+          />
+        </a>
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </article>
+    ))
+  }
+</div>
