@@ -25,7 +25,7 @@ const { title, description } = Astro.props
   {
     imageFiles.map((img) => (
       <article class="thumb">
-        <a class="image" href={img.src} aria-label="image">
+        <a class="image" href={img.src}>
           <Image
             src={img.src}
             width="1200"
