@@ -1,6 +1,6 @@
 # Astro Multiverse
 
-[![Built with Astro](https://astro.badg.es/v1/built-with-astro/tiny.svg)](https://astro.build)
+[![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build)
 
 Say hello to **Multiverse**, a slick, one-page gallery design with a fully functional lightbox.
 
