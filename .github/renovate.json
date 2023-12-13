@@ -1,7 +1,3 @@
 {
-  "extends": ["config:base"],
-  "dependencyDashboard": true,
-  "labels": ["renovate"],
-  "automerge": true,
-  "schedule": ["before 4am on Monday"]
+  "extends": ["local>area44/renovate-config"]
 }
