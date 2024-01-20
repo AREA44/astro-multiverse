@@ -15,11 +15,11 @@
     "verbatimModuleSyntax": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
     },
     "ignoreDeprecations": "5.0",
-    "allowJs": true
+    "allowJs": true,
   },
   "include": ["./src/env.d.ts", "**/*.{ts}", "**/*.{tsx}"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
 }
