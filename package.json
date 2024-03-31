@@ -15,8 +15,8 @@
     "start": "astro dev"
   },
   "dependencies": {
-    "astro": "^4.5.9",
-    "glob": "^10.3.10"
+    "astro": "^4.5.12",
+    "glob": "^10.3.12"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
