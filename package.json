@@ -15,12 +15,12 @@
     "start": "astro dev"
   },
   "dependencies": {
-    "astro": "^4.9.2",
+    "astro": "^4.10.1",
     "glob": "^10.4.1"
   },
   "devDependencies": {
-    "prettier": "^3.3.0",
+    "prettier": "^3.3.1",
     "prettier-plugin-astro": "^0.14.0"
   },
-  "packageManager": "pnpm@9.1.4"
+  "packageManager": "pnpm@9.2.0"
 }
