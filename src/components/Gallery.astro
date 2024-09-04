@@ -11,8 +11,8 @@ const imagePaths = Object.keys(images).filter((imagePath) => {
 <div id="main">
   {
     imagePaths.map(async (imagePath) => {
-      let image = images[imagePath]()
-      let optimizedImage = await getImage({
+      const image = images[imagePath]()
+      const optimizedImage = await getImage({
         src: image,
         width: 1200,
       })
