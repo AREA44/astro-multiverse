@@ -1,41 +1,29 @@
 ---
-import { Image } from 'astro:assets'
-import { glob } from 'glob'
+import type { ImageMetadata } from 'astro'
+import { Image, getImage } from 'astro:assets'
 
-async function ImageFetcher(pattern: string) {
-  const files = glob.sync(pattern, { posix: true })
-  const imagePromises = files.map(async (file) => {
-    const src = file.replace('public', '')
-    return { src }
-  })
-
-  const imageFiles = await Promise.all(imagePromises)
-
-  imageFiles.sort((a, b) => a.src.localeCompare(b.src))
-
-  return imageFiles
-}
-
-const imageFiles = await ImageFetcher('public/images/*.{jpg,,jpeg,png,webp}')
-
-const { title, description } = Astro.props
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*/*')
+const imagePaths = Object.keys(images).filter((imagePath) => {
+  return imagePath.startsWith(`/src/assets/`)
+})
 ---
 
 <div id="main">
   {
-    imageFiles.map((img) => (
-      <article class="thumb">
-        <a class="image" href={img.src}>
-          <Image
-            src={img.src}
-            width="1200"
-            height="750"
-            alt="Astro Multiverse"
-          />
-        </a>
-        <h2>{title}</h2>
-        <p>{description}</p>
-      </article>
-    ))
+    imagePaths.map(async (imagePath) => {
+      let image = images[imagePath]()
+      let optimizedImage = await getImage({
+        src: image,
+        width: 1200,
+      })
+
+      return (
+        <article class="thumb">
+          <a class="image" href={optimizedImage.src}>
+            <Image src={image} height="750" alt="Astro Multiverse" />
+          </a>
+        </article>
+      )
+    })
   }
 </div>
