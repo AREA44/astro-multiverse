@@ -1,6 +1,6 @@
 {
   "name": "astro-multiverse",
-  "version": "23.9.9",
+  "version": "24.9.5",
   "private": true,
   "license": "CCA-3.0",
   "author": {
@@ -15,7 +15,9 @@
     "start": "astro dev"
   },
   "dependencies": {
-    "astro": "^4.15.1"
+    "astro": "^4.15.2",
+    "fontaine": "^0.5.0",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "prettier": "^3.3.3",
