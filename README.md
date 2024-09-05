@@ -28,7 +28,6 @@ To customize Astro Multiverse, you can change your images in the `src/assets` di
 Astro Multiverse uses the following resources:
 
 - Demo images by [Unsplash](https://unsplash.com)
-- Icons by [Font Awesome](https://fontawesome.io)
 - [jQuery](https://jquery.com)
 - [Poptrox](https://github.com/ajlkn/jquery.poptrox)
 

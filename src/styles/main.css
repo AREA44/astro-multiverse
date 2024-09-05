@@ -541,22 +541,6 @@ button:hover:active,
   color: #34a58e !important;
 }
 
-input[type='submit'].icon,
-input[type='reset'].icon,
-input[type='button'].icon,
-button.icon,
-.button.icon {
-  padding-left: 1.35em;
-}
-
-input[type='submit'].icon:before,
-input[type='reset'].icon:before,
-input[type='button'].icon:before,
-button.icon:before,
-.button.icon:before {
-  margin-right: 0.5em;
-}
-
 input[type='submit'].fit,
 input[type='reset'].fit,
 input[type='button'].fit,
@@ -876,42 +860,6 @@ input[type='radio']+label:before {
   opacity: 1;
 }
 
-/* Icon */
-
-.icon {
-  text-decoration: none;
-  border-bottom: none;
-  position: relative;
-}
-
-.icon:before {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-  text-transform: none !important;
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 400;
-}
-
-.icon>.label {
-  display: none;
-}
-
-.icon:before {
-  line-height: inherit;
-}
-
-.icon.solid:before {
-  font-weight: 900;
-}
-
-.icon.brands:before {
-  font-family: 'Font Awesome 5 Brands';
-}
 
 /* List */
 
@@ -1074,39 +1022,6 @@ ul.actions.fit.stacked {
   ul.actions:not(.fixed) li .button {
     width: 100%;
   }
-
-  ul.actions:not(.fixed) li input[type='submit'].icon:before,
-  ul.actions:not(.fixed) li input[type='reset'].icon:before,
-  ul.actions:not(.fixed) li input[type='button'].icon:before,
-  ul.actions:not(.fixed) li button.icon:before,
-  ul.actions:not(.fixed) li .button.icon:before {
-    margin-left: -0.5rem;
-  }
-}
-
-/* Icons */
-
-ul.icons {
-  cursor: default;
-  list-style: none;
-  padding-left: 0;
-}
-
-ul.icons li {
-  display: inline-block;
-  padding: 0 1em 0 0;
-}
-
-ul.icons li:last-child {
-  padding-right: 0;
-}
-
-ul.icons li .icon {
-  color: #505051;
-}
-
-ul.icons li .icon:before {
-  font-size: 1.5em;
 }
 
 /* Table */
@@ -1724,11 +1639,6 @@ body.is-preload #header {
   text-transform: uppercase;
 }
 
-#header nav>ul>li a.icon:before {
-  color: #505051;
-  float: right;
-  margin-left: 0.75em;
-}
 
 #header nav>ul>li a:hover {
   color: #ffffff !important;
