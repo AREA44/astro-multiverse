@@ -17,7 +17,7 @@ pnpm dev
 
 ## How to Customize
 
-To customize Astro Multiverse, you can change your images in the `public/images` directory.
+To customize Astro Multiverse, you can change your images in the `src/assets` directory.
 
 ## License
 
