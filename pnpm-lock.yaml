@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       astro:
-        specifier: ^4.15.6
-        version: 4.15.6(rollup@4.21.2)(typescript@5.5.4)
+        specifier: ^4.15.8
+        version: 4.15.8(rollup@4.21.2)(typescript@5.5.4)
       fontaine:
         specifier: ^0.5.0
         version: 0.5.0
@@ -606,8 +606,8 @@ packages:
   array-iterate@2.0.1:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
 
-  astro@4.15.6:
-    resolution: {integrity: sha512-SWcUNwm8CiVRaIbh4w5byh62BNihpsovlCd4ElvC7cL/53D24HcI7AaGFsPrromCamQklwQmIan/QS7x/3lLuQ==}
+  astro@4.15.8:
+    resolution: {integrity: sha512-pdXjtRF6O1xChiPAUF32R7oVRTW7AK1/Oy/JqPNhLfbelO0l6C7cLdSEuSLektwOEnMhOVXqccetjBs7HPaoxA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -1286,9 +1286,6 @@ packages:
   path-exists@4.0.0:
     resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
     engines: {node: '>=8'}
-
-  path-to-regexp@6.2.2:
-    resolution: {integrity: sha512-GQX3SSMokngb36+whdpRXE+3f9V8UzyAorlYvOGx87ufGHehNTn5lCxrKtLyZ4Yl/wEKnNnr98ZzOwwDZV5ogw==}
 
   pathe@1.1.2:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
@@ -2240,7 +2237,7 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro@4.15.6(rollup@4.21.2)(typescript@5.5.4):
+  astro@4.15.8(rollup@4.21.2)(typescript@5.5.4):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -2288,7 +2285,6 @@ snapshots:
       ora: 8.1.0
       p-limit: 6.1.0
       p-queue: 8.0.1
-      path-to-regexp: 6.2.2
       preferred-pm: 4.0.0
       prompts: 2.4.2
       rehype: 13.0.1
@@ -3203,8 +3199,6 @@ snapshots:
       entities: 4.5.0
 
   path-exists@4.0.0: {}
-
-  path-to-regexp@6.2.2: {}
 
   pathe@1.1.2: {}
 
