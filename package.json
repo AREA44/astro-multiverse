@@ -20,8 +20,8 @@
     "sharp": "^0.33.5"
   },
   "devDependencies": {
-    "prettier": "^3.5.1",
+    "prettier": "^3.5.2",
     "prettier-plugin-astro": "^0.14.1"
   },
-  "packageManager": "pnpm@10.4.0"
+  "packageManager": "pnpm@10.4.1"
 }
