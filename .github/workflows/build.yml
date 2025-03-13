@@ -1,0 +1,36 @@
+# To get started with Astro see: https://docs.astro.build/en/getting-started
+name: Deploy Astro site to Pages
+
+on:
+  pull_request:
+    branches: ['main']
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+
+      - name: Install PNPM
+        uses: pnpm/action-setup@v4
+
+      - name: Install dependencies
+        run: pnpm install
+      
+      - name: Install Playwright
+        run: pnpm exec playwright install
+
+      - name: Build with Astro
+        run: pnpm build
