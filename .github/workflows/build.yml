@@ -28,9 +28,6 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-      
-      - name: Install Playwright
-        run: pnpm exec playwright install
 
       - name: Build with Astro
         run: pnpm build
