@@ -1,6 +1,6 @@
 {
   "name": "astro-multiverse",
-  "version": "24.9.5",
+  "version": "25.03.14",
   "private": true,
   "license": "CCA-3.0",
   "author": {
@@ -15,7 +15,7 @@
     "format": "biome format --write ."
   },
   "dependencies": {
-    "astro": "^5.4.2",
+    "astro": "^5.5.1",
     "fontaine": "^0.5.0",
     "sharp": "^0.33.5"
   },
