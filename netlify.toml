@@ -1,5 +1,5 @@
 [build]
-  command = "pnpm run build"
+  command = "astro build"
   publish = "dist"
 
 [[plugins]]
