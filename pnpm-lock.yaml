@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       astro:
-        specifier: ^5.5.4
-        version: 5.5.4(jiti@2.4.2)(rollup@4.35.0)(typescript@5.5.4)
+        specifier: ^5.5.5
+        version: 5.5.5(jiti@2.4.2)(rollup@4.35.0)(typescript@5.5.4)
       fontaine:
         specifier: ^0.5.0
         version: 0.5.0
@@ -573,8 +573,8 @@ packages:
   array-iterate@2.0.1:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
 
-  astro@5.5.4:
-    resolution: {integrity: sha512-rc9Mj6dIKM9ylTSQ0/S1l5f1iSDNs0PEjRMnvVpZ0W+wfBCu99JEuXy+fiWDNT6gf60bC4dKQehZxZGdSJB9kg==}
+  astro@5.5.5:
+    resolution: {integrity: sha512-fdnnK5dhWNIQT/cXzvaGs9il4T5noi4jafobdntbuNOrRxI1JnOxDfrtBadUo6cknCRCFhYrXh4VndCqj1a4Sg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -1421,8 +1421,8 @@ packages:
   vfile@6.0.3:
     resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==}
 
-  vite@6.2.1:
-    resolution: {integrity: sha512-n2GnqDb6XPhlt9B8olZPrgMD/es/Nd1RdChF6CBD/fHW6pUyUTt2sQW2fPRX5GiD9XEa6+8A6A4f2vT6pSsE7Q==}
+  vite@6.2.3:
+    resolution: {integrity: sha512-IzwM54g4y9JA/xAeBPNaDXiBF8Jsgl3VBQ2YQ/wOY6fyW3xMdSoltIV3Bo59DErdqdE6RxUfv8W69DvUorE4Eg==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -1945,7 +1945,7 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro@5.5.4(jiti@2.4.2)(rollup@4.35.0)(typescript@5.5.4):
+  astro@5.5.5(jiti@2.4.2)(rollup@4.35.0)(typescript@5.5.4):
     dependencies:
       '@astrojs/compiler': 2.11.0
       '@astrojs/internal-helpers': 0.6.1
@@ -1996,8 +1996,8 @@ snapshots:
       unist-util-visit: 5.0.0
       unstorage: 1.15.0
       vfile: 6.0.3
-      vite: 6.2.1(jiti@2.4.2)
-      vitefu: 1.0.6(vite@6.2.1(jiti@2.4.2))
+      vite: 6.2.3(jiti@2.4.2)
+      vitefu: 1.0.6(vite@6.2.3(jiti@2.4.2))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.1
@@ -3164,7 +3164,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite@6.2.1(jiti@2.4.2):
+  vite@6.2.3(jiti@2.4.2):
     dependencies:
       esbuild: 0.25.1
       postcss: 8.5.3
@@ -3173,9 +3173,9 @@ snapshots:
       fsevents: 2.3.3
       jiti: 2.4.2
 
-  vitefu@1.0.6(vite@6.2.1(jiti@2.4.2)):
+  vitefu@1.0.6(vite@6.2.3(jiti@2.4.2)):
     optionalDependencies:
-      vite: 6.2.1(jiti@2.4.2)
+      vite: 6.2.3(jiti@2.4.2)
 
   web-namespaces@2.0.1: {}
 
