@@ -15,7 +15,7 @@
     "format": "biome format --write ."
   },
   "dependencies": {
-    "astro": "^5.7.12",
+    "astro": "^5.7.13",
     "fontaine": "^0.6.0",
     "sharp": "^0.34.1"
   },
@@ -23,5 +23,5 @@
     "@area44/biome-config": "^0.4.1",
     "@biomejs/biome": "^1.9.4"
   },
-  "packageManager": "pnpm@10.10.0"
+  "packageManager": "pnpm@10.11.0"
 }
