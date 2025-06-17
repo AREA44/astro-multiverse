@@ -19,16 +19,16 @@ importers:
         version: 0.34.2
     devDependencies:
       '@area44/biome-config':
-        specifier: ^0.4.1
-        version: 0.4.1
+        specifier: ^2.0.0
+        version: 2.0.0
       '@biomejs/biome':
         specifier: ^1.9.4
         version: 1.9.4
 
 packages:
 
-  '@area44/biome-config@0.4.1':
-    resolution: {integrity: sha512-vUCfpvQ9d2Jtjb6wJAa4Mbei8JAKXEc3t6QWt73NF8pWcOALQxcMGTYMmZmm6WFUSXFitpBc9kWkxdAExQf5zA==}
+  '@area44/biome-config@2.0.0':
+    resolution: {integrity: sha512-oe45WEbOljHy2uu38j1JdLW5yoV25uK7mggcx2vr0CBbcQVO09awei2pah5ppYhbf1Y+qOjTvH7n9E81fhuTEQ==}
 
   '@astrojs/compiler@2.12.2':
     resolution: {integrity: sha512-w2zfvhjNCkNMmMMOn5b0J8+OmUaBL1o40ipMvqcG6NRpdC+lKxmTi48DT8Xw0SzJ3AfmeFLB45zXZXtmbsjcgw==}
@@ -1673,7 +1673,7 @@ packages:
 
 snapshots:
 
-  '@area44/biome-config@0.4.1': {}
+  '@area44/biome-config@2.0.0': {}
 
   '@astrojs/compiler@2.12.2': {}
 
