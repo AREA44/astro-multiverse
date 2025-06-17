@@ -304,11 +304,18 @@ textarea {
 }
 
 a {
-  -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-  -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s
-    ease-in-out;
-  -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  -moz-transition:
+    color 0.2s ease-in-out,
+    border-bottom-color 0.2s ease-in-out;
+  -webkit-transition:
+    color 0.2s ease-in-out,
+    border-bottom-color 0.2s ease-in-out;
+  -ms-transition:
+    color 0.2s ease-in-out,
+    border-bottom-color 0.2s ease-in-out;
+  transition:
+    color 0.2s ease-in-out,
+    border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
   color: #34a58e;
   text-decoration: none;
@@ -479,13 +486,21 @@ button,
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  -moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s
-    ease-in-out, color 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s
-    ease-in-out, color 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+  -moz-transition:
+    background-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out,
     color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+  -webkit-transition:
+    background-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+  -ms-transition:
+    background-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+  transition:
+    background-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out,
     color 0.2s ease-in-out;
   background-color: transparent;
   border: 0;
@@ -1440,23 +1455,43 @@ body.touch .poptrox-popup .nav-next {
 /* Wrapper */
 
 #wrapper {
-  -moz-transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease, -ms-filter
-    0.5s ease, -moz-filter 0.5s ease;
-  -webkit-transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease,
-    -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
-  -ms-transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease, -ms-filter
-    0.5s ease, -ms-filter 0.5s ease;
-  transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease, -ms-filter 0.5s
-    ease, filter 0.5s ease;
+  -moz-transition:
+    -moz-filter 0.5s ease,
+    -webkit-filter 0.5s ease,
+    -ms-filter 0.5s ease,
+    -moz-filter 0.5s ease;
+  -webkit-transition:
+    -moz-filter 0.5s ease,
+    -webkit-filter 0.5s ease,
+    -ms-filter 0.5s ease,
+    -webkit-filter 0.5s ease;
+  -ms-transition:
+    -moz-filter 0.5s ease,
+    -webkit-filter 0.5s ease,
+    -ms-filter 0.5s ease,
+    -ms-filter 0.5s ease;
+  transition:
+    -moz-filter 0.5s ease,
+    -webkit-filter 0.5s ease,
+    -ms-filter 0.5s ease,
+    filter 0.5s ease;
   position: relative;
 }
 
 #wrapper:after {
   pointer-events: none;
-  -moz-transition: opacity 0.5s ease, visibility 0.5s;
-  -webkit-transition: opacity 0.5s ease, visibility 0.5s;
-  -ms-transition: opacity 0.5s ease, visibility 0.5s;
-  transition: opacity 0.5s ease, visibility 0.5s;
+  -moz-transition:
+    opacity 0.5s ease,
+    visibility 0.5s;
+  -webkit-transition:
+    opacity 0.5s ease,
+    visibility 0.5s;
+  -ms-transition:
+    opacity 0.5s ease,
+    visibility 0.5s;
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s;
   background: rgba(36, 38, 41, 0.5);
   content: "";
   display: block;
@@ -1494,13 +1529,22 @@ body.modal-active #wrapper:after {
   -ms-animation: spinner 1s infinite linear !important;
   animation: spinner 1s infinite linear !important;
   pointer-events: none;
-  -moz-transition: top 0.75s ease-in-out, opacity 0.35s ease-out, visibility
-    0.35s;
-  -webkit-transition: top 0.75s ease-in-out, opacity 0.35s ease-out, visibility
-    0.35s;
-  -ms-transition: top 0.75s ease-in-out, opacity 0.35s ease-out, visibility
-    0.35s;
-  transition: top 0.75s ease-in-out, opacity 0.35s ease-out, visibility 0.35s;
+  -moz-transition:
+    top 0.75s ease-in-out,
+    opacity 0.35s ease-out,
+    visibility 0.35s;
+  -webkit-transition:
+    top 0.75s ease-in-out,
+    opacity 0.35s ease-out,
+    visibility 0.35s;
+  -ms-transition:
+    top 0.75s ease-in-out,
+    opacity 0.35s ease-out,
+    visibility 0.35s;
+  transition:
+    top 0.75s ease-in-out,
+    opacity 0.35s ease-out,
+    visibility 0.35s;
   background-image: url("images/spinner.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -1663,14 +1707,26 @@ body.is-preload #header {
 /* Main */
 
 #main {
-  -moz-transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease, -ms-filter
-    0.5s ease, -moz-filter 0.5s ease;
-  -webkit-transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease,
-    -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
-  -ms-transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease, -ms-filter
-    0.5s ease, -ms-filter 0.5s ease;
-  transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease, -ms-filter 0.5s
-    ease, filter 0.5s ease;
+  -moz-transition:
+    -moz-filter 0.5s ease,
+    -webkit-filter 0.5s ease,
+    -ms-filter 0.5s ease,
+    -moz-filter 0.5s ease;
+  -webkit-transition:
+    -moz-filter 0.5s ease,
+    -webkit-filter 0.5s ease,
+    -ms-filter 0.5s ease,
+    -webkit-filter 0.5s ease;
+  -ms-transition:
+    -moz-filter 0.5s ease,
+    -webkit-filter 0.5s ease,
+    -ms-filter 0.5s ease,
+    -ms-filter 0.5s ease;
+  transition:
+    -moz-filter 0.5s ease,
+    -webkit-filter 0.5s ease,
+    -ms-filter 0.5s ease,
+    filter 0.5s ease;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -1755,10 +1811,18 @@ body.is-preload #header {
 
 #main:after {
   pointer-events: none;
-  -moz-transition: opacity 0.5s ease, visibility 0.5s;
-  -webkit-transition: opacity 0.5s ease, visibility 0.5s;
-  -ms-transition: opacity 0.5s ease, visibility 0.5s;
-  transition: opacity 0.5s ease, visibility 0.5s;
+  -moz-transition:
+    opacity 0.5s ease,
+    visibility 0.5s;
+  -webkit-transition:
+    opacity 0.5s ease,
+    visibility 0.5s;
+  -ms-transition:
+    opacity 0.5s ease,
+    visibility 0.5s;
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s;
   background: rgba(36, 38, 41, 0.25);
   content: "";
   display: block;
