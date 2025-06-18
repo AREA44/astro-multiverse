@@ -20,7 +20,7 @@
     "sharp": "^0.34.2"
   },
   "devDependencies": {
-    "@area44/biome-config": "^0.4.1",
+    "@area44/biome-config": "^2.0.1",
     "@biomejs/biome": "^2.0.0"
   },
   "packageManager": "pnpm@10.12.1"
