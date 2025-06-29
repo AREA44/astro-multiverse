@@ -1229,7 +1229,8 @@ table.alt tfoot {
   -webkit-transition: opacity 0.2s ease-in-out;
   -ms-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
-  background-image: -moz-linear-gradient(
+  background-image:
+    -moz-linear-gradient(
       to left,
       rgba(31, 34, 36, 0.35),
       rgba(31, 34, 36, 0) 10em,
@@ -1241,7 +1242,8 @@ table.alt tfoot {
       rgba(31, 34, 36, 0) 10em,
       rgba(31, 34, 36, 0)
     );
-  background-image: -webkit-linear-gradient(
+  background-image:
+    -webkit-linear-gradient(
       to left,
       rgba(31, 34, 36, 0.35),
       rgba(31, 34, 36, 0) 10em,
@@ -1253,7 +1255,8 @@ table.alt tfoot {
       rgba(31, 34, 36, 0) 10em,
       rgba(31, 34, 36, 0)
     );
-  background-image: -ms-linear-gradient(
+  background-image:
+    -ms-linear-gradient(
       to left,
       rgba(31, 34, 36, 0.35),
       rgba(31, 34, 36, 0) 10em,
@@ -1265,7 +1268,8 @@ table.alt tfoot {
       rgba(31, 34, 36, 0) 10em,
       rgba(31, 34, 36, 0)
     );
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to left,
       rgba(31, 34, 36, 0.35),
       rgba(31, 34, 36, 0) 10em,
