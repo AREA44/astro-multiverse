@@ -12,16 +12,17 @@
     "dev": "astro dev",
     "preview": "astro preview",
     "start": "astro dev",
-    "format": "biome format --write ."
+    "format": "biome format --write .",
+    "lint": "biome lint --write .",
+    "check": "biome check --write ."
   },
   "dependencies": {
-    "astro": "^5.10.0",
+    "astro": "^5.10.1",
     "fontaine": "^0.6.0",
     "sharp": "^0.34.2"
   },
   "devDependencies": {
-    "@area44/biome-config": "^2.0.1",
-    "@biomejs/biome": "^2.0.4"
-  },
-  "packageManager": "pnpm@10.12.1"
+    "@area44/biome-config": "^2.2.2",
+    "@biomejs/biome": "^2.0.6"
+  }
 }
