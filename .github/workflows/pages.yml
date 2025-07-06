@@ -1,4 +1,4 @@
-name: Astro
+name: GitHub Pages
 
 on:
   push:
