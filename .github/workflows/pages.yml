@@ -1,4 +1,4 @@
-name: Deploy Astro Site
+name: Astro
 
 on:
   push:
@@ -11,5 +11,5 @@ permissions:
   id-token: write
 
 jobs:
-  deploy:
+  astro:
     uses: area44/actions-lib/.github/workflows/astro.yml@v0.4.0
